@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Image Processing</h1>
+    <form action="/process" method="POST">
+        <label for="cell_size">Размер клетки (в %):</label>
+        <input type="number" id="cell_size" name="cell_size" min="1" max="100" value="10">
+        <button type="submit">Обработать изображение</button>
+    </form>
+
+    <h2>Исходное изображение</h2>
+    <img src="/static/input_image.jpg" alt="Исходное изображение" width="400">
+
+    <h2>Обработанное изображение</h2>
+    <img src="/static/processed_image.jpg" alt="Обработанное изображение" width="400">
+
+    <h2>Распределение цветов</h2>
+    <img src="/static/color_distribution.png" alt="Распределение цветов">
+</body>
+</html>
